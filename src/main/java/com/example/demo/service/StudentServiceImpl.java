@@ -30,13 +30,13 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public void update(Student student) {
-        repo.save(student);
+    public Student update(Student student) {
+        return repo.save(student);
     }
 
     @Override
-    public void add(Student student) {
-        repo.save(student);
+    public Student add(Student student) {
+        return repo.save(student);
     }
 
     @Override
